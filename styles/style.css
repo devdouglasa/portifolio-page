@@ -19,11 +19,14 @@ body {
     box-sizing: border-box;
 }
 .cabecalho {
-    padding: 2% 0% 0% 15%;
+    display: flex;
+    justify-content: center;
+    padding: 3%;
 }
 .cabecalho-menu {
     display: flex;
-    gap: 80px;
+    gap: 60px;
+    justify-content: center;
 }
 .cabecalho-menu-botao {
     text-decoration: none;
@@ -125,4 +128,9 @@ body {
         width: auto;
     }
 
+}
+@media (max-width: 396px) {
+    .cabecalho-menu {
+        gap: 30px;
+    }
 }
