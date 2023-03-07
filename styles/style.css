@@ -21,7 +21,7 @@ body {
 .cabecalho {
     display: flex;
     justify-content: center;
-    padding: 3%;
+    padding: 2%;
 }
 .cabecalho-menu {
     display: flex;
@@ -31,15 +31,18 @@ body {
 .cabecalho-menu-botao {
     text-decoration: none;
     font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--cor-tercearia);
     font-weight: 600;
+}
+.cabecalho-menu-botao:hover {
+    text-shadow: 0px 0px 10px #f6f6f6;
 }
 .apresentacao {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5% 15%;
+    padding: 3% 15%;
     gap: 82px;
 }
 .apresentacao-conteudo {
@@ -54,12 +57,12 @@ body {
 }
 .apresentacao-conteudo-titulo {
     font-family: var(--fonte-primaria);
-    font-size: 2.25rem;
+    font-size: 2rem;
 
 }
 .apresentacao-conteudo-texto {
     font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .content-botao {
     display: flex;
@@ -71,21 +74,21 @@ body {
 .content-botao-texto {
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .botao {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
-    padding: 24px 0;
+    width: 40%;
+    padding: 10px 0;
     text-decoration: none;
     color: var(--cor-secundaria);
     border: 2px solid var(--cor-tercearia);
     border-radius: 8px;
     font-family: var(--fonte-secundaria);
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1rem;
     gap: 16px;
 }
 .botao:hover {
@@ -93,7 +96,7 @@ body {
 }
 
 .apresentacao-imagem {
-    width: 50%;
+    width: 40%;
 
 }
 
@@ -103,16 +106,16 @@ body {
     text-align: center;
     width: 100%;
     font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .rodape-texto {
     font-weight: 400;
-    padding: 23.64px;
+    padding: 10px;
 }
 
 @media (max-width: 1200px ) {
     .cabecalho {
-        padding: 10%;
+        padding: 5%;
     }
     
     .cabecalho-menu {
@@ -129,8 +132,24 @@ body {
     }
 
 }
-@media (max-width: 396px) {
+@media (max-width: 366px) {
     .cabecalho-menu {
         gap: 30px;
+    }
+    .cabecalho-menu-botao {
+        font-size: 0.7rem;
+    }
+    .apresentacao-conteudo-titulo {
+        font-size: 1.5rem;
+    }
+    .apresentacao-conteudo-texto {
+        font-size: 0.9rem;
+    }
+    .content-botao-texto {
+        font-size: 0.9rem;
+    }
+    .botao {
+        width: 136px;
+        padding: 10px 0px;
     }
 }
